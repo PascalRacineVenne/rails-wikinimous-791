@@ -12,7 +12,9 @@ class ArticlesController < ApplicationController
   end
   
   def create
-
+    @article = Article.new
+    @article.save
+    redirect_to article_path(@article)
   end
 
   def edit

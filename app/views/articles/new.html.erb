@@ -1,0 +1,8 @@
+<div class="container-md">
+  <h1>Test new</h1>
+  <%= simple_form_for(@article) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :content, as: :text %>
+  <%= f.button :submit %>
+<% end %>
+</div>

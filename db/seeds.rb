@@ -9,7 +9,6 @@ require 'faker'
 def fake_content
   paragraphs = []
   paragraphs << Faker::Lorem.paragraph
-  paragraphs << Faker::SlackEmoji.activity
   paragraphs << Faker::Lorem.paragraph
   paragraphs << Faker::Lorem.paragraph
   paragraphs.flatten.join("\n\n")

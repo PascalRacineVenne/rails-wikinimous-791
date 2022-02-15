@@ -1,0 +1,25 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  padding: 8px 48px;
+  background-color: #e7e7e7;
+  height: 50px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 32px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
