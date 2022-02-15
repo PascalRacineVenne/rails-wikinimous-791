@@ -5,8 +5,8 @@
     <%#= f.text_field :content, as: :text %>
     <%#= f.button :submit %>
   <%# end  %>
-  <%= simple_form_for @article do |f| %>
+  <%= simple_form_for @article, html: {class: 'styled_form'} do |f| %>
     <%= f.input :title %>
     <%= f.input :content, as: :text %>
     <%= f.button :submit %>
-  <% end  %>
+  <% end %>

@@ -5,6 +5,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/regular';
 @import '@fortawesome/fontawesome-free/scss/brands';
 @import '@fortawesome/fontawesome-free/scss/v4-shims';
+@import 'articles.scss';
 
 body {
   margin: 0;
@@ -29,3 +30,8 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+// .styled_form {
+//   width: 400px;
+//   border: 1px solid green;
+// }
