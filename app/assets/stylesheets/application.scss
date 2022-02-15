@@ -1,4 +1,10 @@
 @import "bootstrap/scss/bootstrap";
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import '@fortawesome/fontawesome-free/scss/v4-shims';
 
 body {
   margin: 0;
@@ -12,7 +18,7 @@ a {
 }
 
 .nav-bar {
-  padding: 8px 48px;
+  padding: 12px 48px;
   background-color: #e7e7e7;
   height: 50px;
   border-bottom: 1px solid gray;
