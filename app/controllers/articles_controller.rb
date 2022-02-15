@@ -12,30 +12,32 @@ class ArticlesController < ApplicationController
   end
   
   def create
-    @article = Article.new
+    @article = Article.new(article_param)
     @article.save
     redirect_to article_path(@article)
   end
-
+  
   def edit
   end
-
+  
   def update
-    
+    # @article = Article.new(article_param)
+    @article.update(article_param)
+    redirect_to article_path(@article)
   end
 
   def destroy
-    
+    @article.destroy
+    redirect_to articles_path
   end
 
   private
 
   def set_article
     @article = Article.find(params[:id])
-    # raise
   end
 
   def article_param
-    # params.require()
+    params.require(:article).permit(:title, :content)
   end
 end
