@@ -12,7 +12,7 @@ def fake_content
   paragraphs << Faker::SlackEmoji.activity
   paragraphs << Faker::Lorem.paragraph
   paragraphs << Faker::Lorem.paragraph
-  paragraphs.flatten.join('/n/n')
+  paragraphs.flatten.join("\n\n")
 end
 
 10.times do
